@@ -8,5 +8,30 @@ The Colorado Board of Elections has given us the task to determine the results o
 - Software: Python 3.7.6, Visual Studio Code, 1.54.3
 
 ## Results
+* Total votes cast:
+  * The total amount of votes cast for the congressional district was 369,711.
+We got these results by looping through the election data CSV file and by initializing a vote count variable that would increment after each iteration. As the for loop iterated through each row, the vote count variable would increase by one with the following code:
+```
+total_votes = 0
+
+for row in reader:
+    total_votes += 1
+```
+* Votes per county:
+  * Jefferson County had a turnout of 38,855 voters, which accounted for 10.5% of the total voter turnout for the congressional district we analyzed.
+  * Jefferson County had a turnout of 306,055 voters, which accounted for 82.8% of the total voter turnout for the congressional district we analyzed.
+  * Arapahoe County had a turnout of 38,855 voters, which accounted for 10.5% of the total voter turnout for the congressional district we analyzed.
+
+* County with largest amount of votes:
+  *  Denver county had the largest turnout for the particular district we analyzed, with 82.8% of the total turnout for the congressional district
+
+* Number of votes and the percentage of the total votes for each candidate:
+  * Candidate Charles Casper Stockham received 85,213 votes which amounted to 23.0% of the popular vote.
+  * Candidate Diana DeGette received 272,892 votes which amounted to 73.8% of the popular vote.
+  * Candidate Raymon Anthony Doane received 11,606 votes which amounted to 3.1% of the popular vote.
+
+* Election winner:
+  * Diana DeGette won the election with a vote count of 272,892 of the 369,711 votes cast. She won 73.8% of the total votes casted.
+
 
 ## Summary
